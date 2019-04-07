@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>File Upload</title>
+	<link rel="stylesheet" type="text/css" href="FileUploadStyle.css">
+</head>
+<body>
+	<div>
+		Name : <input id = "NameID" type="Text" name="Name" placeholder="Enter Your Name">  <br>
+		File : <input id = "FileID" type="File" name="File" placeholder="Choose your File"> <br>
+		<input type="submit" name="Submit" onclick="post_now()">
+	</div>
+	
+	<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+	<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyAeEvRR1S_Pb2d8xA6N8uIvZz_SlN_PntY",
+		    authDomain: "medicorum-79cc2.firebaseapp.com",
+		    databaseURL: "https://medicorum-79cc2.firebaseio.com",
+		    projectId: "medicorum-79cc2",
+		    storageBucket: "medicorum-79cc2.appspot.com",
+		    messagingSenderId: "874407517278"
+		  };
+		  firebase.initializeApp(config);
+	</script>
+	
+	<script type="text/javascript" src="FileUploadJS.js"></script>	
+</body>
+</html>

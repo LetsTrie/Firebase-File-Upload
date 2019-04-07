@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Showing The Result </title>
+	<link rel="stylesheet" type="text/css" href="FileUploadStyle.css">
+</head>
+<body>
+	<h1 style = "text-align: center; border-bottom: 2px solid black"> Showing All Links </h1>
+	<div>
+		<button> <a href="FileUpload.html"> Go to Home Page </a></button>
+	</div>
+	<div id = "Hi"> </div>
+
+
+
+	<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+	<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyAeEvRR1S_Pb2d8xA6N8uIvZz_SlN_PntY",
+		    authDomain: "medicorum-79cc2.firebaseapp.com",
+		    databaseURL: "https://medicorum-79cc2.firebaseio.com",
+		    projectId: "medicorum-79cc2",
+		    storageBucket: "medicorum-79cc2.appspot.com",
+		    messagingSenderId: "874407517278"
+		  };
+		  firebase.initializeApp(config);
+	</script>
+	
+	<script type="text/javascript" src="showAll.js"></script>	
+</body>
+</html>
